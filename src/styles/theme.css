@@ -1,0 +1,61 @@
+/* Base theme variables */
+:root {
+  /* Colors */
+  --color-primary: #0066CC;
+  --color-primary-hover: #0052a3;
+  --color-primary-active: #004080;
+  --color-secondary: #00AA88;
+  --color-secondary-hover: #008870;
+  --color-secondary-active: #006653;
+  
+  /* Text colors */
+  --color-text-primary: #333333;
+  --color-text-secondary: #666666;
+  --color-text-heading: #222222;
+  
+  /* Backgrounds */
+  --color-background: #FFFFFF;
+  --color-background-alt: #F8F8F8;
+  
+  /* Spacing */
+  --spacing-base: 1rem;
+  --max-width-container: 1200px;
+  
+  /* Typography */
+  --font-size-base: 1rem;
+  --font-size-tablet: 1.125rem;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+  
+  /* Border radius */
+  --radius-base: 4px;
+  --radius-large: 8px;
+}
+
+/* Media aspect ratios */
+.aspect-hero {
+  aspect-ratio: 16/9;
+  max-height: 80vh;
+}
+
+.aspect-product {
+  aspect-ratio: 1/1;
+}
+
+.aspect-banner {
+  aspect-ratio: 21/9;
+  max-height: 40vh;
+}
+
+.aspect-thumbnail {
+  aspect-ratio: 4/3;
+}
+
+/* Responsive typography */
+@media (min-width: 768px) {
+  :root {
+    --font-size-base: var(--font-size-tablet);
+  }
+}

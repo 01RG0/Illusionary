@@ -1,0 +1,21 @@
+/* Container */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spacing-base);
+  padding-right: var(--spacing-base);
+}
+
+/* Responsive layouts */
+@media (min-width: 768px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: var(--max-width-container);
+  }
+}
